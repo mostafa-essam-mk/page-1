@@ -1,0 +1,176 @@
+/* Start Variables */
+:root {
+    --first-color: #d7b50f;
+    --second-color: #ff87bf;
+    --third-color: #af67fe;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: url("../images/main.png");
+    background-attachment: fixed;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* End Global Rules */
+/* Start main */
+main {
+    padding: 30px 80px 0;
+    width: 100%;
+    min-height: 100vb;
+    color: #FFF;
+}
+main .logo {
+    color: var(--first-color);
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+main .logo img {
+    width: 40px;
+    margin-right: 12px;
+}
+main section {
+    display: flex;
+}
+@media (max-width: 900px) {
+    main section {
+        flex-direction: column;
+    }
+}
+main section .info-text {
+    padding-top: 80px;
+    flex-basis: 50%;
+}
+main section .info-text h1 {
+    margin: 0;
+    color: #FFF;
+    font-size: 30px;
+    line-height: 1;
+}
+main section .info-text h1 span {
+    font-size: 60px;
+    background: -webkit-linear-gradient(left, var(--first-color), var(--second-color), var(--third-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+main section .info-text p {
+    max-width: 75%;
+}
+main section .info-text p:nth-of-type(1) {
+    margin: 0;
+    color: #CCC;
+}
+main section .info-text p:nth-of-type(2) {
+
+}
+main section .contact {
+    flex-basis: 50%;
+}
+@media (max-width: 900px) {
+    main section .contact {
+        margin-top: 40px;
+    }
+}
+main section .contact .phone-parent {
+
+}
+main section .contact .phone-parent .image {
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+main section .contact .phone-parent .image img {
+
+}
+main section .contact .phone-parent .image .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(256 256 256 / 0.85);
+    display: flex;
+    border-radius: 29px;
+    font-weight: bold;
+}
+main section .contact .phone-parent .image .info div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 29px;
+}
+main section .contact .phone-parent .image .info div:nth-child(1) {
+    background-image: linear-gradient(to right, var(--first-color), var(--second-color), var(--third-color));
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0 0 7px 0 #000;
+}
+main section .contact .phone-parent .image .info div:nth-child(2) {
+    padding-left: 10px;
+    padding-right: 30px;
+}
+main section .contact .phone-parent .image .info div p {
+    margin: 0 auto;
+    width: fit-content;
+}
+main section .contact .phone-parent .image .info div:nth-child(2) p:nth-child(1) {
+    color: #1e1e1e;
+}
+main section .contact .phone-parent .image .info div:nth-child(2) p:nth-child(2) {
+    color: #000;
+}
+main section .contact .download-btn-parent {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 1250px) {
+    main section .contact .download-btn-parent {
+        flex-direction: column;
+    }
+}
+main section .contact .download-btn-parent .download-btn-child {
+    margin: 10px 20px;
+    padding: 10px 20px;
+    max-width: fit-content;
+    border-radius: 29px;
+    box-shadow: 0px 0px 7px 0px #fff;
+    background-image: linear-gradient(to right, var(--first-color), var(--second-color), var(--third-color));
+    display: flex;
+    align-items: center;
+}
+main section .contact .download-btn-parent .download-btn-child i {
+    color: #1e1e1e;
+    font-size: 30px;
+    margin-right: 10px;
+}
+main section .contact .download-btn-parent .download-btn-child a {
+    text-decoration: none;
+    color: #1e1e1e;
+    font-size: 15px;
+    font-weight: bold;
+}
+.characters {
+    width: 100%;
+    z-index: -99;
+}
+@media (min-width: 901px) {
+    .characters {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+@media (max-width: 900px) {
+    .characters {
+        margin-bottom: -6px;
+    }
+}
+/* End main */
